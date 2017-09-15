@@ -1,0 +1,16 @@
+{
+  "name": "TwitBot",
+  "version": "0.0.0",
+  "description": "twitterBot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Z",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "request": "^2.81.0",
+    "twit": "^2.2.9"
+  }
+}

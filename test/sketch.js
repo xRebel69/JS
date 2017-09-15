@@ -1,20 +1,21 @@
 function setup() {
-  noCanvas();
-  array1.push(array2[0]);
-  array1.push(array2[0]);
-
-  array1.push(array2[0]);
-
-  print(array1);
-  print(array2);
-
-  array2.splice(0,1);
-  print(array1);
-  print(array2);
-
+  createCanvas(600,400);
+  //createCapture(VIDEO);
 }
-var array1 = [];
-var array2 = [];
+
 function draw() {
 
+  loadPixels();
+
+  for(var y = 0; y < width; y++) {
+    for(var x = 0; x <height; x++) {
+      var pixel = (x + y*width) * 4;
+      pixels[pixel+0] = random(255);
+      pixels[pixel+1] = random(255);
+      pixels[pixel+2] = random(255);
+      pixels[pixel+3] = random(255);
+    }
+  }
+
+  updatePixels();
 }
